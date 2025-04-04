@@ -4,7 +4,7 @@
     <h2> Bowling<h2>
 
  <p> Le Bowling de Chez les Quilles dansantes est équipé de 16 pistes de Bowling ou vous pourrez jouer en famille ou entre amis pour vous challenger et vous faire plaisir.
-  Nos pistes de Bowling sont accessibles aux personnes handicapées et aux enfants à partir de 5 ans. Des toboggans et des légères sont à disposition.
+  Nos pistes de Bowling sont accessibles aux personnes handicapées et aux enfants à partir de 5 ans. Des toboggans et des boules légères sont à disposition.
 Toutes nos pistes sont équipées de barrières pour que les enfants puissent jouer comme des grands.</p>
     
    <h3>Service et accessibilité</h3>
