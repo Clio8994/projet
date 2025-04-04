@@ -20,8 +20,7 @@ define('ROOT', '/B1CS2/projet/');
   <body>
 <header>
       <h1>
-        <a href="<?= ROOT ?>index.php">
-          <img src="<?= ROOT ?>images/logo.svg" alt="logo" />
+          <img src="<?= ROOT ?>images/logo.svg" alt="logo" >
         </a>
         Tournois de bowling
       </h1>
