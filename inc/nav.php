@@ -1,5 +1,5 @@
 <?php 
-define ('BASE', 'B1CS2/projet/');
+define ('BASE', '/B1CS2/projet/');
 ?>
 
 <body>
