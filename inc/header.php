@@ -20,9 +20,10 @@ define('ROOT', '/B1CS2/projet/');
   <body>
 <header>
       <h1>
-          <img src="<?= ROOT ?>images/logo.svg" alt="logo" >
+        <a href="<?= ROOT ?>">
+            <img src="<?= ROOT ?>images/logo.svg" alt="logo" >
+            Tournois de bowling
         </a>
-        Tournois de bowling
       </h1>
       <form action="<?= ROOT ?>pages/recherche.php" method="get">
         <input
