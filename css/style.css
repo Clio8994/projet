@@ -3,6 +3,12 @@
     margin: 0%;
 }
 
+body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 header{
     width: 100%;
     line-height: 5vh;
@@ -31,4 +37,23 @@ form {
 
 input[type="image"]{
     height: 30px;
+}
+
+nav{
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    display: block;
+    font-size: x-large;
+    flex-wrap: wrap;
+    background-color: green;
+}
+
+nav a {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
