@@ -4,9 +4,17 @@
 }
 
 body{
+    margin: 0%;
+    padding: 0%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-image: url(../images/bowling2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 header{
@@ -40,13 +48,17 @@ input[type="image"]{
 }
 
 nav{
-    width: 30%;
+    width: 28%;
     height: 200px;
     text-align: center;
     display: block;
     font-size: x-large;
     flex-wrap: wrap;
     background-color: green;
+    justify-content: flex-start;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    margin-left: 40px;
 }
 
 nav a {
@@ -57,3 +69,76 @@ nav a {
     text-decoration: none;
     color: white;
 }
+
+main{
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    width: 37%;
+}
+
+main h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+}
+
+main p{
+    font-size:large;
+    font-style: normal;
+}
+
+aside {
+    width: 24%;
+    background: lightgray;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    font-size: 18px;
+}
+
+aside form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form p{
+    font-size: larger;
+}
+
+form input[type="text"],
+[type="email"],
+[type="password"],
+[type="submit"],
+[type="number"]{
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightyellow;
+    justify-content: space-evenly;
+}
+
+.connexion {
+    background-color: #63b4ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(99, 180, 255, 0.5);
+    margin: 20px;
+    padding: 5px;
+}
+

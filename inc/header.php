@@ -9,7 +9,7 @@ define('ROOT', '/B1CS2/projet/');
     if(isset($title)){
       echo $title;
     } else {
-      echo 'bowling';
+      echo 'Chez les Quilles dansantes';
     }
     ?></title>
     <meta charset="UTF-8" />
@@ -22,17 +22,9 @@ define('ROOT', '/B1CS2/projet/');
       <h1>
         <a href="<?= ROOT ?>">
             <img src="<?= ROOT ?>images/logo.svg" alt="logo" >
-            Tournois de bowling
+            Chez les Quilles Dansantes
         </a>
       </h1>
-      <form action="<?= ROOT ?>pages/recherche.php" method="get">
-        <input
-          type="search"
-          name="recherche"
-          id="recherche"
-          placeholder="Recherche"
-          maxlength="200"
-        />
-        <input type="image" src="<?= ROOT ?>images/loupe.svg" />
+      <a href="login.php" class="connexion">Se connecter</a>
       </form>
 </header>
