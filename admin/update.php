@@ -1,6 +1,6 @@
 <?php
 include '../inc/header.php';
-include '../inc/nav.php';   
+include 'nav.php';   
 ?>
 <main>
     <form action="modif.php" method="post">

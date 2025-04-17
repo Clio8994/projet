@@ -1,10 +1,10 @@
 <<?php
     include '../inc/header.php';
-    include '../inc/nav.php';
+    include 'nav.php';
     ?>
     <main>
     <section>
-        <p>📋 Format et règles
+        <p>Format et règles
         <p>Chaque équipe joue 2 parties lors de la phase de qualification.</p>
 
         Les 4 meilleures équipes (score cumulé) accèdent à la finale.
@@ -30,8 +30,8 @@
         <?php
         include "../inc/key.php";
         $sql = "SELECT * FROM tournois ORDER BY date DESC";
-        $book = $connexion->query($sql);
-        foreach ($book as $b):
+        $tournois = $connexion->query($sql);
+        foreach ($tournois as $b):
         ?>
             <tbody>
                 <td><?= $b["nom"]; ?></td>

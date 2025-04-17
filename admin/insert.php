@@ -1,7 +1,8 @@
 <?php
 include "../inc/key.php";
 
-if (!empty($_POST['nom']) && !empty($_POST['date']) && !empty($_POST['lieu'])) {
+if (isset($_POST['nom']) && !empty($_POST['nom']) && isset($_POST['date']) && !empty($_POST['date']) && isset($_POST['lieu']) && !empty($_POST['lieu'])) {
+    
     $nom = $_POST['nom'];
     $date = $_POST['date'];
     $lieu = $_POST['lieu'];
@@ -11,8 +12,7 @@ if (!empty($_POST['nom']) && !empty($_POST['date']) && !empty($_POST['lieu'])) {
             VALUES ('$nom', '$date', '$lieu', '$description')";
     $connexion->query($sql);
 
-    // Redirection après ajout
-    header("Location:tournois.php"); // ou une autre page
+    header("Location:tournois.php");
 } else {
     header("location:tournois.php");
 }

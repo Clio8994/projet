@@ -1,5 +1,5 @@
 <?php include '../inc/header.php'; ?>
-<?php include '../inc/nav.php'; ?>
+<?php include 'nav.php'; ?>
 
 <main>
     <h2>Ajouter un tournoi</h2>
