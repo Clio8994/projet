@@ -25,6 +25,6 @@ define('ROOT', '/B1CS2/projet/');
             Chez les Quilles Dansantes
         </a>
       </h1>
-      <a href="login.php" class="connexion">Se connecter</a>
+      <a href="<?= ROOT ?>pages/connexion.php" class="connexion">Se connecter</a>
       </form>
 </header>
