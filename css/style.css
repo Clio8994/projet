@@ -116,11 +116,7 @@ form p{
     font-size: larger;
 }
 
-form input[type="text"],
-[type="email"],
-[type="password"],
-[type="submit"],
-[type="number"]{
+form input{
     width: 80%;
     padding: 12px;
     margin-bottom: 15px;

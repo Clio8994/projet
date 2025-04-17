@@ -2,7 +2,8 @@
 include '../inc/nav.php'; ?>
 
 <main>
-    <form action="connect.php" method="post">
+    <form action="login.php" method="post">
+        <h1>Page de connexion</h1><br><br>
         <p>Email</p>
         <input type="email" name="email" id="email">
         <p>Mot de passe</p>
