@@ -2,7 +2,7 @@
 include '../inc/header.php';
 include '../inc/nav.php';
 include '../inc/key.php';
-
+?>
 <main>
         <h1>Répartition des prix</h1>
         <h2>1er</h2>
@@ -12,13 +12,13 @@ include '../inc/key.php';
             Format du tournois : 
             Chaque équipe joue 2 parties lors de la phase de qualification.
 
-Les 4 meilleures équipes (score cumulé) accèdent à la finale.
+Les 4 meilleures équipes score cumulé accèdent à la finale.
 
-En finale, chaque joueur joue 1 partie : le score total de l’équipe détermine le classement final.
+En finale, chaque joueur joue 1 partie : le score total de l'équipe détermine le classement final.
 
-En cas d’égalité : départage avec une frame décisive par capitaine d’équipe.
+En cas d'égalité : départage avec une frame décisive par capitaine d'équipe.
 
-Matériel fourni sur place (boules et chaussures).
+Matériel fourni sur place boules et chaussures.
 
 
         </article>
