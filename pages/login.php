@@ -16,5 +16,5 @@ if (isset($_POST["email"]) && !empty($_POST["mdp"]) && isset($_POST["email"]) &&
     }
 
 } else {
-    header("location:connexio.php");
+    header("location:connexion.php");
 }
