@@ -31,4 +31,5 @@ Matériel fourni sur place boules et chaussures.
 
        </section> 
     </main>
+    <?php include '../inc/form.php'; ?>
         <?php include '../inc/footer.php'; ?>
