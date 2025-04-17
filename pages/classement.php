@@ -40,5 +40,5 @@ usort($joueurs, fn($a, $b) => $b['score'] <=> $a['score']);
         </table>
     </section>
 </main>
-
+<?php include '../inc/form.php'; ?>
 <?php include '../inc/footer.php'; ?>
