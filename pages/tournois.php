@@ -2,53 +2,33 @@
 include '../inc/header.php';
 include '../inc/nav.php';
 include '../inc/key.php';
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nom = $_POST['nom'];
-    $date = $_POST['date'];
-    $lieu = $_POST['lieu'];
-    $participants = (int) $_POST['participants'];
-    $stmt = $pdo->prepare("INSERT INTO tournois (nom, date, lieu, participants) VALUES (?, ?, ?, ?)");
-    $stmt->execute([$nom, $date, $lieu, $participants]);
-    header("Location: tournois.php");
-    exit();
-}
-$query = $pdo->query("SELECT * FROM tournois ORDER BY date DESC");
-$tournois = $query->fetchAll(PDO::FETCH_ASSOC);
-?>
-    <!DOCTYPE html>
-    <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Tournois</title>
-        <link rel="stylesheet" href="<?= BASE ?>style.css">
-        <main>
-            <h1>Liste des Tournois</h1>
+<main>
+        <h1>Répartition des prix</h1>
+        <h2>1er</h2>
+        <h2>2ème</h2>
+        <h3>3ème</h3>
+        <article>
+            Format du tournois : 
+            Chaque équipe joue 2 parties lors de la phase de qualification.
 
-            <table border="1">
-                <tr>
-                    <th>Nom</th>
-                    <th>Date</th>
-                    <th>Lieu</th>
-                    <th>Participants</th>
-                </tr>
-                <?php foreach ($tournois as $t): ?>
-                    <tr>
-                        <td><?= htmlspecialchars($t['nom']) ?></td>
-                        <td><?= date('d/m/Y', strtotime($t['date'])) ?></td>
-                        <td><?= htmlspecialchars($t['lieu']) ?></td>
-                        <td><?= (int) $t['participants'] ?></td>
-                    </tr>
-                <?php endforeach; ?>
-            </table>
+Les 4 meilleures équipes (score cumulé) accèdent à la finale.
 
-            <h2>Ajouter un tournoi</h2>
-            <form method="post">
-                <label>Nom : <input type="text" name="nom" required></label><br>
-                <label>Date : <input type="date" name="date" required></label><br>
-                <label>Lieu : <input type="text" name="lieu" required></label><br>
-                <label>Participants : <input type="number" name="participants" min="1" required></label><br>
-                <input type="submit" value="Ajouter">
-            </form>
-        </main>
+En finale, chaque joueur joue 1 partie : le score total de l’équipe détermine le classement final.
+
+En cas d’égalité : départage avec une frame décisive par capitaine d’équipe.
+
+Matériel fourni sur place (boules et chaussures).
+
+
+        </article>
+       <section>
+        Adresse :
+        Dates :
+        Horaires : 
+        Frais d'inscription :
+        Date limite d'inscription : 
+
+       </section> 
+    </main>
         <?php include '../inc/footer.php'; ?>
