@@ -92,6 +92,11 @@ main p{
     font-style: normal;
 }
 
+main form{
+    display: flex;
+    flex-direction: column;
+}
+
 aside {
     width: 24%;
     background: lightgray;

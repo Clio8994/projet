@@ -1,7 +1,7 @@
 <?php
 define('TITLE', 'Classement Bowling');
-include '../inc/nav.php';
 include '../inc/header.php';
+include '../inc/nav.php';
 
 $joueurs = [
     ['nom' => 'Dupont', 'prenom' => 'Claire', 'score' => 278],
