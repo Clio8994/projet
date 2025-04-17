@@ -26,7 +26,7 @@ Matériel fourni sur place (boules et chaussures).
         </thead>
         <?php
         include "../inc/key.php";
-        $sql = "SELECT * FROM tournois";
+        $sql = "SELECT * FROM tournois ORDER BY date DESC";
         $book = $connexion->query($sql);
         foreach ($book as $b):
         ?>
