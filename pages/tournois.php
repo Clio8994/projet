@@ -3,6 +3,20 @@
     include '../inc/nav.php';
     ?>
     <main>
+        <section>
+            <p>📋 Format et règles
+<p>Chaque équipe joue 2 parties lors de la phase de qualification.</p>
+
+Les 4 meilleures équipes (score cumulé) accèdent à la finale.
+
+En finale, chaque joueur joue 1 partie : le score total de l'équipe détermine le classement final.
+
+En cas d'égalité : départage avec une frame décisive par capitaine d'équipe.
+
+Matériel fourni sur place (boules et chaussures).
+
+
+        </section>
     <table border="1">
         <thead>
             <th>Nom</th>
