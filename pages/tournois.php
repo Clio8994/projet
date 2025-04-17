@@ -1,7 +1,6 @@
 <<?php
     include '../inc/header.php';
     include '../inc/nav.php';
-    include '../inc/key.php';
     ?>
     <main>
     <h1>Répartition des prix</h1>
