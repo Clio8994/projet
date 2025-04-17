@@ -12,7 +12,7 @@
         </thead>
         <?php
         include "../inc/key.php";
-        $sql = "SELECT * FROM tournois";
+        $sql = "SELECT * FROM tournois ORDER BY date ASC";
         $book = $connexion->query($sql);
         foreach ($book as $b):
         ?>
