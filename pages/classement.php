@@ -2,16 +2,6 @@
 define('TITLE', 'Classement Bowling');
 include '../inc/header.php';
 include '../inc/nav.php';
-
-$joueurs = [
-    ['nom' => 'Dupont', 'prenom' => 'Claire', 'score' => 278],
-    ['nom' => 'Morel', 'prenom' => 'Julien', 'score' => 265],
-    ['nom' => 'Nguyen', 'prenom' => 'Sophie', 'score' => 250],
-    ['nom' => 'Rossi', 'prenom' => 'Luca', 'score' => 248],
-    ['nom' => 'Legrand', 'prenom' => 'Emma', 'score' => 243],
-];
-
-usort($joueurs, fn($a, $b) => $b['score'] <=> $a['score']);
 ?>
 
 <main>

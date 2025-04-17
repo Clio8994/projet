@@ -43,8 +43,9 @@ form {
     align-items: center;
 }
 
-input[type="image"]{
+input[type="image"] {
     height: 30px;
+    border: none;
 }
 
 nav{
@@ -143,3 +144,6 @@ footer{
     padding: 5px;
 }
 
+table {
+    width: 80%;
+}
