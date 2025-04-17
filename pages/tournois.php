@@ -17,10 +17,10 @@
         foreach ($book as $b):
         ?>
             <tbody>
-                <td><?= $b["Nom"]; ?></td>
-                <td><?= $b["Date"]; ?></td>
-                <td><?= $b["Lieu"]; ?></td>
-                <td><?= $b["Description"]; ?></td>
+                <td><?= $b["nom"]; ?></td>
+                <td><?= $b["date"]; ?></td>
+                <td><?= $b["lieu"]; ?></td>
+                <td><?= $b["description"]; ?></td>
             </tbody>
         <?php endforeach; ?>
     </table>
